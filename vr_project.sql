@@ -27,6 +27,7 @@ GROUP BY current_project
 HAVING COUNT(current_project) > 1;
 
 -- determine how many available positions ther are for developers and if we have enough to fill the needed positions (each project requires 2 developers)
+
 SELECT (COUNT(*) * 2) -
 (
   SELECT COUNT(*)
